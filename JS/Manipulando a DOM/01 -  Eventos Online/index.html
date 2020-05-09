@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <div id="app">
+            <!--Isso aqui é uma DOM e vamos manipula-la-->
+            <button onclick="mostrarAlerta()"> Me Pressione </button> <!--"onclick" é após o click ele fazer alguma operação, após o click, ele ira executar a função do "Script"-->
+            <button onmouseover="mostrarAlerta()">Passe o Mouse</button> <!--Quando eu apenas passar o mouse por cima, ele ira executar!-->
+        </div> <!--Vamos fazer aplicação de um botão-->
+        <!--Após o Click, ira executar a função, e ira imprimir na tela-->
+        <script>
+            // DOM é a arvore de elemento dentro do nosso HTML
+            // Por exemplo: div, button,..
+            function mostrarAlerta()
+            {
+                alert("Botao Foi Clicado") // "alert" é uma função global do Próprio "JavaScript"
+            }
+        </script>
+    </body>
+</html>

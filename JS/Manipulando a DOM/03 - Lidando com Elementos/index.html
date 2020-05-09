@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input id="nome"/>
+        </div>
+        <script>
+            // Agora iremos criar novos DOM através do JavaScript
+            var linkElement = document.createElement("a") // Vamos passar a tag do elemento que queremos criar, como é um link vou passar "a"
+
+            linkElement.setAttribute("href", "https://rocketseat.com.br/") // Passei esse link
+
+            // Mas também quero colocar um nome pro texto do link
+            var textElement = document.createTextNode("Acessar Site da Rocketseat") // Criando texto para poder passar por link
+
+            //Eu quero colocar o text dentro do link, então eu faço
+            linkElement.appendChild(textElement); // No portugues, estou acionando o "textElement" adcionando como um filho do "linkElement"
+
+            var containerElement = document.querySelector("#app") // buscando pela "div app"
+            containerElement.appendChild(linkElement) // E aqui estou colocando texto sobre o link
+
+            var inputElement = document.querySelector("#nome")
+            containerElement.removeChild(inputElement) // Aqui eu simplesmente removi o input 
+        </script>
+    </body>
+</html>

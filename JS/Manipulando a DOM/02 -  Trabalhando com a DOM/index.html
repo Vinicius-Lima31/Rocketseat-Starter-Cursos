@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <div id="app"> <!--input é para leitura, eu vou digitar algo que quero-->
+            <input type="text" name="nome" id="nome"/> <!--Formas de referenciar-->
+            <button class="botao">Adicionar</button> <!--Irei referencia esse aqui, através do class "botao"-->
+        </div>
+
+        <script>
+            /* inputElement = document.getElementById("nome") // "document" é uma variavel global feita para referenciar o DOM
+                 Ou seja, busque um elemento do DOM, com id "nome"
+
+             Outras formas Buscar Elemento
+            var inputElement = document.getElementByTagName("input")[0] --> Passei a tag, ele sempre vai retornar sempre um vetor, aqui no caso eu retornei um vetor do indice 0
+            */
+
+            // Existe uma forma melhor:
+            var inputElement = document.querySelector("nome") // é uma forma de percorrer o DOM, ele percorre até achar o elemento
+            // Ja que o querySelector percorre até achar, eu posso informar onde ele estar:
+            inputElement = document.querySelector("div#app input")// Aqui eu falei onde exatamente ele estar
+
+            // "querySelector" retorna exatamente 1, a não ser que eu use o "querySelectorAll" aqui ele ira retornar tudo!
+
+            console.log(inputElement) // Vai imprimir exatamente, aquele imput que temos lá
+
+            var btnElement = document.querySelector("button.botao") // Referencia o Botão através do "class"  que se chama "botão'
+            btnElement.onclick = function()
+            {
+                var text = inputElement.value // aqui eu peguei o "inputElement" e peguei o "value"(valor) dela
+                alert(text) // Imprimi o valor que foi digitado!
+            }
+
+            // A gente modifica pelo DOM, no javaScript
+            // Eu peguei o que foi escrito no "input" peguei o valor, e botei no "alert"
+
+        </script>
+    </body>
+</html>
