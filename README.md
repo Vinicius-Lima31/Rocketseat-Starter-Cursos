@@ -1,2 +1,3 @@
-# Rocketseat-Starter-Cursos
- Rocketseat Start, Curso Gratuito de JS, ES6, NODE, REACT, REACT NATIVE
+# Rocketseat Starter (Plantaforma Gratuita)
+Link para Acessar a Plantaforma [Clique Aqui](https://skylab.rocketseat.com.br/journey/starter)
+
