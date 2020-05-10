@@ -1,0 +1,1 @@
+alert("Funcionou!") // Isso aqui será imprimido na tela
